@@ -4,35 +4,7 @@
 
 <script runat="server">
 
-    BigCustomer myApp;
-    ITools tools;
-    string   keyword, ReqURL;
-    string defaultkey = "";
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        Public.CheckLogin("all");
-        tools = ToolsFactory.CreateTools();
-        myApp = new BigCustomer();
-        keyword = Request["keyword"];
-
-        if (keyword != "输入大客户名称搜索" && keyword != null)
-        {
-            keyword = keyword;
-        }
-        else
-        {
-            keyword = "输入大客户名称搜索";
-        }
-        if (keyword == "输入大客户名称搜索")
-        {
-            defaultkey = "";
-        }
-        else
-        {
-            defaultkey = keyword;
-        }
-        ReqURL = "keyword=" + Server.UrlEncode(defaultkey);
-    }
+ 
 </script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -81,14 +53,6 @@
 </script>
 </head>
 <body style="margin:10px;">
-<table width="100%" border="0" cellspacing="0" cellpadding="5">
-				<form action="selectCustomer.aspx" method="post" name="frm_sch" id="frm_sch" >
-				  <tr bgcolor="#F5F9FC" >
-					<td align="right"><span class="left_nav">搜索</span> 
-					 <input type="text" name="keyword" size="70" id="keyword" onfocus="if(this.value=='输入大客户名称搜索'){this.value='';}" value="<% =keyword %>"> <input type="submit" name="btn_sch" class="btn_01" id="btn_sch" value="搜索" /></td>
-				  </tr>
-				  </form>
-				</table>
-    <% =myApp.SelectCustomer()%>
+
 </body>
 </html>

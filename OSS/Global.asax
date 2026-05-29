@@ -30,11 +30,17 @@
 
         Exception ex = Server.GetLastError();
 
-        switch (ex.InnerException.GetType().Name)
+        Exception innerException = ex.InnerException;
+        if (innerException == null)
+        {
+            throw ex;
+        }
+
+        switch (innerException.GetType().Name)
         {
             case "TradePrivilegeException":
                 Server.ClearError();
-                Response.Redirect("/unpower.aspx?tip=" + ex.InnerException.Message);
+                Response.Redirect("/unpower.aspx?tip=" + innerException.Message);
                 break;
             default:
                 throw ex;
