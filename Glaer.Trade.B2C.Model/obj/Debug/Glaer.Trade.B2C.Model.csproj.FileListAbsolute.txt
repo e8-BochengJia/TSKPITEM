@@ -16,3 +16,9 @@ E:\站点\唐山科普\钢研官网\Glaer.Trade.B2C.Model\bin\Debug\Glaer.Trade.
 E:\站点\唐山科普\钢研官网\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.dll
 E:\站点\唐山科普\钢研官网\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.pdb
 E:\站点\唐山科普\钢研官网\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.csprojResolveAssemblyReference.cache
+D:\work\tsk\TSKPITEM\Glaer.Trade.B2C.Model\bin\Debug\Glaer.Trade.B2C.Model.dll
+D:\work\tsk\TSKPITEM\Glaer.Trade.B2C.Model\bin\Debug\Glaer.Trade.B2C.Model.pdb
+D:\work\tsk\TSKPITEM\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.csproj.AssemblyReference.cache
+D:\work\tsk\TSKPITEM\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.csproj.CoreCompileInputs.cache
+D:\work\tsk\TSKPITEM\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.dll
+D:\work\tsk\TSKPITEM\Glaer.Trade.B2C.Model\obj\Debug\Glaer.Trade.B2C.Model.pdb
