@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C29A708-A444-44F0-ACA7-30EAF20CECB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glaer.Trade.B2C.BLL.SAL</RootNamespace>
+    <AssemblyName>Glaer.Trade.B2C.BLL.SAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Glaer.Trade.Util.Encrypt">
+      <HintPath>..\..\..\NewBin\Glaer.Trade.Util.Encrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Glaer.Trade.Util.Mail">
+      <HintPath>..\..\..\NewBin\Glaer.Trade.Util.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Glaer.Trade.Util.SQLHelper">
+      <HintPath>..\..\..\NewBin\Glaer.Trade.Util.SQLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Glaer.Trade.Util.Tools">
+      <HintPath>..\..\..\NewBin\Glaer.Trade.Util.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Glaer.Trade.Util.TraceError">
+      <HintPath>..\..\..\NewBin\Glaer.Trade.Util.TraceError.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FriendlyLink.cs" />
+    <Compile Include="FriendlyLinkFactory.cs" />
+    <Compile Include="IFriendlyLink.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glaer.Trade.B2C.DAL.SAL\Glaer.Trade.B2C.DAL.SAL.csproj">
+      <Project>{73F9BAAB-6CEB-42BA-8590-BD9D87728A13}</Project>
+      <Name>Glaer.Trade.B2C.DAL.SAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.Model\Glaer.Trade.B2C.Model.csproj">
+      <Project>{6524BC89-0507-4A21-A89F-522312392D39}</Project>
+      <Name>Glaer.Trade.B2C.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.ORM\Glaer.Trade.B2C.ORM.csproj">
+      <Project>{CE144363-CB6C-4512-A798-B3032FBF5AB0}</Project>
+      <Name>Glaer.Trade.B2C.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.RBAC\Glaer.Trade.B2C.RBAC.csproj">
+      <Project>{C35F515E-10BF-4F64-8D36-B7E9FF8D6A10}</Project>
+      <Name>Glaer.Trade.B2C.RBAC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

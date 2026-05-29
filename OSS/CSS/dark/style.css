@@ -1,0 +1,584 @@
+﻿@import url(/css/dark/magic-check.css);
+
+/*兼容老样式*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    line-height: 2 !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    background-color: #eeeeee !important;
+}
+
+.content_div {
+    padding: 0px;
+}
+
+.content_table {
+}
+
+.content_title {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fafafa;
+    font-size: 18px;
+    padding: 0px 20px 0px 65px;
+    color: #555555;
+    border-bottom: 1px solid #dddddd;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+    background-image: url('/images/layout/icon_home.png');
+}
+
+.content_title a {
+    float: right;
+    font-size: 14px;
+    padding: 0px 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #EB5E00 !important;
+    text-decoration: none !important;
+    border: 1px solid #FFCC66;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fdf9e1;
+}
+
+.content_title a:hover {
+    color: #EB5E00 !important;
+    text-decoration: none !important;
+}
+
+.content_content {
+    background-color: #FFFFFF;
+    padding: 20px 15px;
+}
+
+
+.cell_table {
+    border-top-width: 10px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: #dddddd;
+    transition: border-top-color 1s;
+}
+
+    .cell_table:hover {
+        border-top-color: #4a89dc;
+    }
+
+.cell_title {
+    font-size: 14px;
+    background-color: #fafafa;
+    width: 150px;
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #FFFFFF;
+    color: #555555;
+}
+
+.cell_content {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+    .cell_content input[type=text], .cell_content input[type=password], .cell_content select {
+        font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+        font-size: 14px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        padding: 0px 10px;
+        border: 1px solid #dddddd;
+    }
+
+    .cell_content .input_calendar {
+        padding-left: 30px !important;
+        background-position-x: 5px !important;
+    }
+
+    .cell_content input[type=text]:hover, .cell_content input[type=password]:hover {
+        border: 1px solid #4a89dc;
+    }
+
+    .cell_content select:hover {
+        border: 1px solid #4a89dc;
+    }
+
+    .cell_content select {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url("/images/layout/icon_select_arrow.png") no-repeat scroll right center;
+        padding-right: 25px;
+    }
+
+        .cell_content select::-ms-expand {
+            display: none;
+        }
+
+    .cell_content input[type=checkbox], .cell_content input[type=radio] {
+        width: 16px;
+    }
+
+.bt_orange {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+    font-size: 16px;
+    padding: 0px 15px;
+    font-weight: bold;
+    color: #EB5E00;
+    border: 1px solid #FFCC66;
+    height: 35px;
+    background-color: #fdf9e1;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bt_orange:first-child {
+    margin-left: 0px;
+}
+
+.bt_grey {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+    font-size: 16px;
+    padding: 0px 15px;
+    font-weight: bold;
+    color: #1c94c4;
+    border: 1px solid #DFDFDF;
+    height: 35px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn_01 {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+    font-size: 14px;
+    padding: 0px 15px;
+    font-weight: bold;
+    color: #EB5E00;
+    border: 1px solid #FFCC66;
+    height: 30px;
+    background-color: #fdf9e1;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn_disabled {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+    font-size: 14px;
+    padding: 0px 15px;
+    font-weight: bold;
+    color: #C4C4C4;
+    border: 1px solid #C4C4C4;
+    height: 30px;
+    background-color: #F3F3F3;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#frm_sch {
+    margin: 0px;
+    padding: 10px 20px 0px 15px;
+    background-color: #ffffff !important;
+}
+
+    #frm_sch table {
+        background-color: #ffffff !important;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 3px;
+        border-style: solid;
+        border-color: #dddddd;
+        border-left-color: #4a89dc;
+        transition: border-top-color 1s;
+        padding: 5px 10px;
+    }
+
+    #frm_sch tr {
+        background-color: #ffffff !important;
+        background-image: url("/images/layout/icon_search.png");
+        background-repeat: no-repeat;
+        background-position-x: 10px;
+        background-position-y: center;
+    }
+
+    #frm_sch tr td:first-child {
+        padding-left: 50px;
+    }
+
+    #frm_sch input[type=text], #frm_sch select {
+        font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+        font-size: 14px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        padding: 0px 10px;
+        border: 1px solid #dddddd;
+    }
+
+    #frm_sch .input_calendar {
+        padding-left: 30px !important;
+        background-position-x: 5px !important;
+    }
+
+    #frm_sch input[type=text]:hover {
+        border: 1px solid #4a89dc;
+    }
+
+    #frm_sch select:hover {
+        border: 1px solid #4a89dc;
+    }
+
+    #frm_sch select {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url("/images/layout/icon_select_arrow.png") no-repeat scroll right center;
+        padding-right: 25px;
+    }
+
+        #frm_sch select::-ms-expand {
+            display: none;
+        }
+
+    #frm_sch .left_nav {
+        color: #555555;
+        padding: 0px 5px;
+    }
+
+
+/*兼容老样式*/
+
+.top {
+    background-color: #373d41;
+    height: 60px;
+    color: #ffffff;
+}
+
+    .top a {
+        color: #ffffff;
+    }
+
+        .top a:link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .top a:visited {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .top a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+    .top .withoutlogo {
+        width: 60px !important;
+    }
+
+        .top .withoutlogo .iconlogo {
+            display: none !important;
+        }
+
+    .top .logo {
+        background-color: #2a2f32;
+        width: 240px;
+        padding: 0px;
+    }
+
+        .top .logo .iconlogo {
+            width: 160px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        .top .logo .iconmenu {
+            border: 0px;
+            width: 20px;
+            height: 20px;
+            padding: 20px;
+            margin: 0px;
+            vertical-align: middle;
+        }
+
+        .top .logo ul {
+            height: 60px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .top .logo li {
+            width: 100%;
+            height: 60px;
+            float: left;
+            list-style: none;
+            padding: 0px;
+            line-height: 60px;
+        }
+
+            .top .logo li span {
+                float: right;
+            }
+
+    .top .nav {
+        background-color: #373d41;
+        font-size: 16px;
+    }
+
+        .top .nav img {
+            border: 0px;
+            width: 20px;
+            height: 20px;
+            padding-top: 20px;
+            margin: 0px;
+            vertical-align: top;
+        }
+
+        .top .nav ul {
+            height: 60px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .top .nav li {
+            height: 60px;
+            float: left;
+            list-style: none;
+            padding: 0px 20px;
+            border-right: 1px solid #2a2f32;
+            line-height: 60px;
+        }
+
+            .top .nav li:hover {
+                background-color: #2a2f32;
+            }
+
+            .top .nav li.on {
+                background-color: #4a89dc;
+            }
+
+
+    .top .info {
+        background-color: #373d41;
+        padding: 0px;
+        font-size: 14px;
+    }
+
+        .top .info img {
+            border: 0px;
+            width: 20px;
+            height: 20px;
+            padding-top: 20px;
+            margin: 0px;
+            vertical-align: top;
+        }
+
+        .top .info ul {
+            float: right;
+            height: 60px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .top .info li {
+            height: 60px;
+            float: left;
+            list-style: none;
+            padding: 0px 20px;
+            border-left: 1px solid #2a2f32;
+            line-height: 60px;
+        }
+
+            .top .info li:hover {
+                background-color: #2a2f32;
+            }
+
+.menu {
+    background-color: #282d33;
+    color: #ffffff;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+    .menu a {
+        color: #ffffff;
+        display: block;
+    }
+
+        .menu a:link {
+            color: #BBBBBB;
+            text-decoration: none;
+        }
+
+        .menu a:visited {
+            color: #BBBBBB;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+    .menu ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menu li {
+        list-style: none;
+        padding: 7px 10px 7px 60px;
+        margin: 3px 0px 3px 0px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+        .menu li:hover {
+            background-color: #282d33;
+            border-left: 3px solid #4a89dc;
+            padding-left: 57px;
+        }
+
+        .menu li.on {
+            background-color: #282d33;
+            border-left: 3px solid #4a89dc;
+            padding-left: 57px;
+        }
+
+        .menu li.group {
+            padding: 10px 10px 10px 20px;
+            margin: 0px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #30363e;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position-x: 210px;
+            background-position-y: center;
+            display: inherit !important;
+        }
+
+            .menu li.group:hover {
+                background-color: #30363e;
+                border-left: 0px;
+            }
+
+            .menu li.group img {
+                border: 0px;
+                width: 20px;
+                height: 20px;
+                padding-right: 20px;
+                margin: 0px;
+                vertical-align: middle;
+            }
+
+            .menu li.group.fold {
+                background-image: url('/images/layout/icon_menu_fold.png');
+            }
+
+            .menu li.group.open {
+                background-image: url('/images/layout/icon_menu_open.png');
+            }
+
+            .menu li.group.fold ~ li {
+                display: none;
+            }
+
+.login {
+    height: 100%;
+    overflow: hidden;
+    background-image: url('/images/layout/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+    .login .shadow {
+        box-shadow: 0 5px 30px 0 #000;
+    }
+
+    .login .table {
+        border: 1px solid #4d4d4d;
+        padding: 0px;
+        border-spacing: 0px;
+    }
+
+        .login .table td {
+            padding: 10px;
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+
+        .login .table .title {
+            background-color: #000000;
+            padding: 10px 20px 10px 20px;
+            color: #ffffff;
+            filter: alpha(Opacity=70);
+            opacity: 0.7;
+        }
+
+            .login .table .title h1 {
+                font-size: 22px;
+                font-weight: normal;
+                padding-top: 10px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+                padding-left: 0px;
+                line-height: 30px;
+                margin: 0px;
+            }
+
+        .login .table input[type=text], .login input[type=password] {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+            font-size: 14px !important;
+            height: 30px !important;
+            line-height: 30px !important;
+            padding: 0px 10px;
+            border: 1px solid #dddddd;
+            width: 260px;
+        }
+
+
+            .login .table input[type=text]:hover, .login .table input[type=password]:hover {
+                border: 1px solid #4a89dc;
+            }
+
+        .login .table #verifycode {
+            width: 190px;
+        }
+
+        .login .table #msg {
+            color: #eb5202;
+            font-size: 16px;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            line-height: 30px;
+            margin: 0px;
+        }
+
+        .login .table .bt_login {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif !important;
+            background-color: #eb5202;
+            color: #ffffff;
+            border: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            height: 50px;
+            width: 282px;
+        }

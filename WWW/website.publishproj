@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+警告: 请勿修改此文件，它将用于 Web 发布过程。
+
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ae4e6357-3b01-4044-8320-28228a4f55e9}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/WWW</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebMetabasePath>
+    </SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glaer.Trade.B2C.BLL.CMS\Glaer.Trade.B2C.BLL.CMS.csproj">
+      <Project>{E736C18A-20B4-4856-84F4-9933657C8605}</Project>
+      <Name>Glaer.Trade.B2C.BLL.CMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.BLL.Sys\Glaer.Trade.B2C.BLL.Sys.csproj">
+      <Project>{CB662D10-0F68-4EFA-B5BC-4EE2D620274A}</Project>
+      <Name>Glaer.Trade.B2C.BLL.Sys</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.DAL.CMS\Glaer.Trade.B2C.DAL.CMS.csproj">
+      <Project>{55179707-B36A-4E26-9A0E-679FD93D8B8B}</Project>
+      <Name>Glaer.Trade.B2C.DAL.CMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.DAL.Sys\Glaer.Trade.B2C.DAL.Sys.csproj">
+      <Project>{B9ACABF4-5F57-40BB-8019-A2BA992E7E05}</Project>
+      <Name>Glaer.Trade.B2C.DAL.Sys</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.Model\Glaer.Trade.B2C.Model.csproj">
+      <Project>{6524BC89-0507-4A21-A89F-522312392D39}</Project>
+      <Name>Glaer.Trade.B2C.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.ORM\Glaer.Trade.B2C.ORM.csproj">
+      <Project>{CE144363-CB6C-4512-A798-B3032FBF5AB0}</Project>
+      <Name>Glaer.Trade.B2C.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glaer.Trade.B2C.RBAC\Glaer.Trade.B2C.RBAC.csproj">
+      <Project>{C35F515E-10BF-4F64-8D36-B7E9FF8D6A10}</Project>
+      <Name>Glaer.Trade.B2C.RBAC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

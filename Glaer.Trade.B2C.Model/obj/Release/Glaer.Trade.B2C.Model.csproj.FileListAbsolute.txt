@@ -1,0 +1,10 @@
+E:\人民党建网\WEB\Glaer.Trade.B2C.Model\bin\Release\Glaer.Trade.B2C.Model.dll
+E:\人民党建网\WEB\Glaer.Trade.B2C.Model\bin\Release\Glaer.Trade.B2C.Model.pdb
+E:\人民党建网\WEB\Glaer.Trade.B2C.Model\obj\Release\Glaer.Trade.B2C.Model.dll
+E:\人民党建网\WEB\Glaer.Trade.B2C.Model\obj\Release\Glaer.Trade.B2C.Model.pdb
+E:\人民党建网\WEB\Glaer.Trade.B2C.Model\obj\Release\Glaer.Trade.B2C.Model.csprojResolveAssemblyReference.cache
+E:\网站\人民党建网\WEB\Glaer.Trade.B2C.Model\bin\Release\Glaer.Trade.B2C.Model.dll
+E:\网站\人民党建网\WEB\Glaer.Trade.B2C.Model\bin\Release\Glaer.Trade.B2C.Model.pdb
+E:\网站\人民党建网\WEB\Glaer.Trade.B2C.Model\obj\Release\Glaer.Trade.B2C.Model.csprojResolveAssemblyReference.cache
+E:\网站\人民党建网\WEB\Glaer.Trade.B2C.Model\obj\Release\Glaer.Trade.B2C.Model.dll
+E:\网站\人民党建网\WEB\Glaer.Trade.B2C.Model\obj\Release\Glaer.Trade.B2C.Model.pdb

@@ -1,0 +1,35 @@
+  1.开启Ad Hoc Distributed Queries组件，在sql查询编辑器中执行如下语句：
+ 
+
+exec sp_configure 'show advanced options',1
+reconfigure
+exec sp_configure 'Ad Hoc Distributed Queries',1
+reconfigure
+    
+2.关闭Ad Hoc Distributed Queries组件，在sql查询编辑器中执行如下语句：
+
+exec sp_configure 'Ad Hoc Distributed Queries',0
+reconfigure
+exec sp_configure 'show advanced options',0
+reconfigure
+
+
+select   *   from   OPENDATASOURCE('SQLOLEDB','DataSource=192.168.0.117;UserID=sa;Password=123456').l2014.dbo.Help
+
+select * from OPENQUERY([192.168.0.117],'select * from l2014.dbo.Help')
+select * from [192.168.0.117].ShangPinYou.dbo.Help
+
+
+http://html6game.com/
+
+http://www.codesc.net/
+http://www.jq22.com/
+
+http://www.jq22.com/yanshi1455
+http://www.jq22.com/jquery-info5449 左右滑动
+
+
+app  去阴影 
+
+a { text-decoration:none;outline:none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-focus-ring-color: rgba(0, 0, 0, 0);}
+a:hover { text-decoration:none;outline:none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-focus-ring-color: rgba(0, 0, 0, 0);}
